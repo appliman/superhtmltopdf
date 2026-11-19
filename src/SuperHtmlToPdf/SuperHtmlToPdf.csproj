@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>SuperHtmlToPdf</PackageId>
+    <AssemblyName>SuperHtmlToPdf</AssemblyName>
+    <RootNamespace>SuperHtmlToPdf</RootNamespace>
+    <Description>Portable PDF generator for server-rendered HTML.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="SuperHtmlToPdf.Tests" />
+  </ItemGroup>
+  <Import Project="Pdf/Fonts.props" Condition="Exists('Pdf/Fonts.props')" />
+</Project>

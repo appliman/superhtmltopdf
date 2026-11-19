@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/SuperHtmlToPdf.Blazor/SuperHtmlToPdf.Blazor.csproj" />
+  <Project Path="src/SuperHtmlToPdf.Tests/SuperHtmlToPdf.Tests.csproj" />
+  <Project Path="src/SuperHtmlToPdf/SuperHtmlToPdf.csproj" />
+</Solution>

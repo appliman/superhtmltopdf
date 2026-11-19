@@ -1,0 +1,6 @@
+<Project>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Fonts/*.ttf" LogicalName="SuperHtmlToPdf.Fonts.%(Filename)%(Extension)" />
+    <Content Include="$(MSBuildThisFileDirectory)Fonts/LICENSE;$(MSBuildThisFileDirectory)Fonts/SOURCE.txt" Pack="true" PackagePath="licenses/" />
+  </ItemGroup>
+</Project>

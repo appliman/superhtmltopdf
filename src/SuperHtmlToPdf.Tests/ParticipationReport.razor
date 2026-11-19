@@ -1,0 +1,30 @@
+@using Microsoft.AspNetCore.Components
+@namespace SuperHtmlToPdf.Tests
+
+@code {
+    [Parameter] public string Logo { get; set; } = "";
+    [Parameter] public int Participants { get; set; } = 48;
+    private string _club = "";
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await Task.Yield();
+        _club = "Association du Canal";
+    }
+}
+
+<html lang="fr"><head><style>
+body { font-family:Arial; color:#193747; font-size:14px }
+table { width:100%; border-collapse:collapse }
+td,th { padding:5px; border-bottom:1px solid #bcc9cb; text-align:left }
+thead { display:table-header-group } .total { font-weight:bold }
+</style></head><body>
+<img src="@Logo" width="44" height="44" alt="Logo du club" />
+<h1>Bilan des participations</h1><p>@_club</p>
+<table><thead><tr><th>Séance</th><th>Participant</th></tr></thead><tbody>
+@for (var i = 1; i <= Participants; i++)
+{
+    <tr><td>Atelier de printemps</td><td>Participant @i.ToString("00")</td></tr>
+}
+</tbody></table><p class="total">Total des participations · @Participants</p>
+</body></html>
