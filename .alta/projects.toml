@@ -1,0 +1,11 @@
+# The projects of this repository for CodeAlta: each [projects.<key>] is a folder that is a project of its own.
+# Edit it with `alta project manifest`, or in CodeAlta Desktop with Sub-projects… in the menu of the repository.
+
+[projects.superhtmltopdf]
+path = "src/SuperHtmlToPdf"
+
+[projects.superhtmltopdf-blazor]
+path = "src/SuperHtmlToPdf.Blazor"
+
+[projects.superhtmltopdf-tests]
+path = "src/SuperHtmlToPdf.Tests"
